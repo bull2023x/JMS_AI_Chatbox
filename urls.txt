@@ -1,0 +1,3 @@
+https://docs.oracle.com/ja-jp/iaas/jms/doc/overview-java-management-service.html
+https://docs.oracle.com/ja-jp/iaas/jms/doc/java-management-service.html
+https://docs.oracle.com/ja-jp/iaas/jms/doc/key-concepts-terminology.html

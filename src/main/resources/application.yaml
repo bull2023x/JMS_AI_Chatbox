@@ -3,11 +3,12 @@ server:
   port: 8080
 
 langchain4j:
-  open-ai:
+  ollama:
     chat-model:
       enabled: true
-      api-key: "demo"
-      model-name: "gpt-4o-mini"
+      base-url: "http://localhost:11434"
+      model-name: "llama3.2"
+
   rag:
     embedding-store-content-retriever:
       enabled: true
@@ -17,5 +18,5 @@ langchain4j:
       embedding-store: "@default"
 
 app:
-  root: "//home/dmitry/github/helidon/docs/src/main/asciidoc/mp"
-  inclusions: "*.adoc"
+  root: "jms-docs"
+  inclusions: "*.txt"

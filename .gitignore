@@ -37,3 +37,7 @@ nb-configuration.xml
 # Other
 *.Identifier
 
+
+# Generated JMS documentation files
+jms-docs/*.txt
+jms-html/

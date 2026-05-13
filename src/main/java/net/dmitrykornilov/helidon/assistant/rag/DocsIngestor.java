@@ -19,7 +19,7 @@ public class DocsIngestor {
     private static final Logger LOGGER = Logger.getLogger(DocsIngestor.class.getName());
 
     private final Config config;
-    private final AsciiDocPreprocessor preprocessor = new AsciiDocPreprocessor();
+    private final TextPreprocessor preprocessor = new TextPreprocessor();
     private final EmbeddingStore<TextSegment> embeddingStore;
     private final EmbeddingModel embeddingModel;
 
@@ -41,10 +41,9 @@ public class DocsIngestor {
         var files = FileLister.listFiles(root, exclusions, inclusions);
 
         // Process files
-        var processor = new AsciiDocPreprocessor();
         var grouper = new ChunkGrouper(1000);
         for (Path path : files) {
-            var chunks = processor.extractChunks(path.toFile());
+            var chunks = preprocessor.extractChunks(path.toFile());
             var groupedChunks = grouper.groupChunks(chunks);
 
             // Convert to LangChain4J TextSegments with metadata
