@@ -34,6 +34,7 @@ Javaランタイムとは何ですか？
 python fetch_docs.py
 mvn clean package
 java -jar target/helidon-assistant.jar
+```
 
 ## 主な特徴
 
