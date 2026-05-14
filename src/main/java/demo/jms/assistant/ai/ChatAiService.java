@@ -1,4 +1,4 @@
-package net.dmitrykornilov.helidon.assistant.ai;
+package demo.jms.assistant.ai;
 
 import dev.langchain4j.service.SystemMessage;
 import dev.langchain4j.service.UserMessage;

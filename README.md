@@ -448,9 +448,9 @@ jms-docs/.gitkeep
 pom.xml
 src/main/resources/application.yaml
 src/main/resources/WEB/index.html
-src/main/java/net/dmitrykornilov/helidon/assistant/ai/ChatAiService.java
-src/main/java/net/dmitrykornilov/helidon/assistant/rag/DocsIngestor.java
-src/main/java/net/dmitrykornilov/helidon/assistant/rag/TextPreprocessor.java
+src/main/java/demo/jms/assistant/ai/ChatAiService.java
+src/main/java/demo/jms/assistant/rag/DocsIngestor.java
+src/main/java/demo/jms/assistant/rag/TextPreprocessor.java
 ```
 
 ### `fetch_docs.py`
@@ -606,3 +606,23 @@ kill <PID>
 ライセンスは、利用するコード、依存ライブラリ、追加した実装の扱いに合わせて確認してください。
 
 Oracle Docs由来のコンテンツについては、Oracle公式ドキュメントの利用条件を確認してください。
+
+## 参考情報・謝辞
+
+本PoCは、Dmitry Kornilov氏による Helidon / LangChain4j を用いたAIアシスタントの解説記事およびサンプル実装を参考にしています。
+
+- 解説記事: https://dmitrykornilov.net/2025/05/16/building-ai-assistant-application-in-java/
+- 関連解説記事: https://dmitrykornilov.net/2025/03/13/developing-ai-powered-applications-with-helidon-and-langchain4j/
+- 参考リポジトリ: https://github.com/m0mus/helidon-assistant
+
+本リポジトリでは、その考え方を参考に、Oracle Java Management Service の公開ドキュメントを対象としたOllamaベースのPoCとして再構成しています。
+
+主な変更点は以下です。
+
+- OpenAI APIではなく、無料でローカル実行できるOllamaを利用
+- Oracle Java Management Serviceの公開ドキュメントをPythonスクリプトで自動取得・テキスト化
+- 取得したテキストをRAGの知識データとして利用
+- Java Management Service向けのAI相談チャットボックスとして再構成
+- macOS、Oracle Linux 8、Windowsで動作確認
+- Javaパッケージ名をPoC用途向けに `demo.jms.assistant` へ変更
+

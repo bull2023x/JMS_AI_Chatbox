@@ -1,4 +1,4 @@
-package net.dmitrykornilov.helidon.assistant.ai;
+package demo.jms.assistant.ai;
 
 import io.helidon.integrations.langchain4j.Ai;
 

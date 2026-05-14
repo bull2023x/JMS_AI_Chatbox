@@ -10,14 +10,14 @@
     <relativePath/>
   </parent>
 
-  <groupId>net.dmitrykornilov.helidon-assistant</groupId>
+  <groupId>demo.jms</groupId>
   <artifactId>helidon-assistant</artifactId>
   <version>1.0.0-SNAPSHOT</version>
 
   <name>Helidon Assistant</name>
 
   <properties>
-    <mainClass>net.dmitrykornilov.helidon.assistant.ApplicationMain</mainClass>
+    <mainClass>demo.jms.assistant.ApplicationMain</mainClass>
     <version.lib.asciidoctorj>2.5.7</version.lib.asciidoctorj>
   </properties>
 

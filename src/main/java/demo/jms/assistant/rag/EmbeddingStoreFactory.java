@@ -1,4 +1,4 @@
-package net.dmitrykornilov.helidon.assistant.rag;
+package demo.jms.assistant.rag;
 
 import java.util.function.Supplier;
 

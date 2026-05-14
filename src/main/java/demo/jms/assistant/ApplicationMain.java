@@ -1,4 +1,4 @@
-package net.dmitrykornilov.helidon.assistant;
+package demo.jms.assistant;
 
 import io.helidon.common.config.Config;
 import io.helidon.http.Header;
@@ -11,8 +11,8 @@ import io.helidon.webserver.WebServerConfig;
 import io.helidon.webserver.http.HttpRouting;
 import io.helidon.webserver.staticcontent.StaticContentFeature;
 
-import net.dmitrykornilov.helidon.assistant.rag.DocsIngestor;
-import net.dmitrykornilov.helidon.assistant.rest.ChatBotService;
+import demo.jms.assistant.rag.DocsIngestor;
+import demo.jms.assistant.rest.ChatBotService;
 
 public class ApplicationMain {
 

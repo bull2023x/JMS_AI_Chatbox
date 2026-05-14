@@ -1,4 +1,4 @@
-package net.dmitrykornilov.helidon.assistant.rest;
+package demo.jms.assistant.rest;
 
 import java.util.Collections;
 
@@ -11,8 +11,8 @@ import io.helidon.webserver.http.ServerResponse;
 import jakarta.json.Json;
 import jakarta.json.JsonBuilderFactory;
 import jakarta.json.JsonObject;
-import net.dmitrykornilov.helidon.assistant.ai.ChatAiService;
-import net.dmitrykornilov.helidon.assistant.ai.SummaryAiService;
+import demo.jms.assistant.ai.ChatAiService;
+import demo.jms.assistant.ai.SummaryAiService;
 
 @Service.Singleton
 public class ChatBotService implements HttpService {
