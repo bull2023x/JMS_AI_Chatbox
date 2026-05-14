@@ -36,6 +36,17 @@ mvn clean package
 java -jar target/helidon-assistant.jar
 ```
 
+## 対応OSについて
+
+このPoCは、Java、Maven、Python、Ollamaを利用するため、macOSだけでなくWindowsおよびLinuxでも動作可能です。
+Javaアプリケーション本体はOS依存を避けるため、`application.yaml` ではドキュメント配置先を相対パスで指定しています。
+
+```yaml
+app:
+  root: "jms-docs"
+  inclusions: "*.txt"
+```
+
 ## 主な特徴
 
 - Java 21 + Helidon SE 4 による軽量なWebアプリケーション
