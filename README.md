@@ -24,6 +24,17 @@ Javaランタイムとは何ですか？
 このPoCにおける **JMS** は、**Oracle Java Management Service** を意味します。  
 一般的な **Java Message Service** ではありません。
 
+## 他のドキュメントへの応用
+
+このPoCは、JMSドキュメントを例にしたRAGチャットボックスです。
+
+ログイン不要の公開HTMLドキュメントであれば、`urls.txt` のURLリストを差し替えるだけで、別テーマの相談チャットボックスとして利用できます。
+
+```bash
+python fetch_docs.py
+mvn clean package
+java -jar target/helidon-assistant.jar
+
 ## 主な特徴
 
 - Java 21 + Helidon SE 4 による軽量なWebアプリケーション
