@@ -41,3 +41,4 @@ nb-configuration.xml
 # Generated JMS documentation files
 jms-docs/*.txt
 jms-html/
+.venv/
